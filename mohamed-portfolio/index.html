@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Nabil | Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+
+    /* ✅ Navbar */
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    /* ✅ Hero Section */
+    header {
+      background-image: url("images/background.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 120px 40px 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      color: white;
+      text-align: left;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-pic {
+      width: 380px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 4px solid #fff;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    /* ✅ Main Content */
+    main.content {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .headline {
+      font-size: 2rem;
+      color: #0a4d91;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 22px;
+      background-color: #0a4d91;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #073c75;
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 160px;
+      }
+      .nav-links {
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.85);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 15px;
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Mohamed Nabil</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Project Page</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ✅ Hero Section -->
+  <header>
+    <div class="hero-text">
+      <h1>Welcome to My Space</h1>
+      <p class="subtitle">Data Scientist | AI Enthusiast | Machine Learning Developer</p>
+    </div>
+    <img src="images/Mohamed Nabil.jpg" alt="Mohamed Nabil" class="profile-pic"/>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2 class="headline">About Me</h2>
+      <p>
+        I'm Mohamed Nabil, a passionate Data Scientist and AI enthusiast from Cairo, Egypt. I specialize in building data-driven solutions using Machine Learning, Deep Learning, and Generative AI techniques. My goal is to extract insights from complex data, automate smart decision-making, and create AI-powered tools that bring real impact to businesses and people.
+        <br><br>
+        I'm currently studying Data Science at Helwan University, and I’ve already completed multiple real-world projects in areas such as healthcare, customer analytics, and natural language processing.
+        <br><br>
+        With hands-on experience in Python, Scikit-learn, Pandas, Power BI, and frameworks like Keras and XGBoost, I’m continuously growing my skills and always excited to learn more. I'm not just learning AI — I’m building with it.
+      </p>
+      <a href="about.html" class="btn">Read More</a>
+    </section>
+
+    <section>
+      <h2 class="headline">Projects</h2>
+      <p>Explore my machine learning and analytics projects — from business predictions to sentiment analysis.</p>
+      <a href="projects.html" class="btn">View Projects</a>
+    </section>
+
+    <section>
+      <h2 class="headline">Education</h2>
+      <p>Currently pursuing a Bachelor's in Data Science at Helwan University, Cairo.</p>
+    </section>
+
+    <section>
+      <h2 class="headline">Contact</h2>
+      <p>Let’s talk about how I can help with your next project.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mohamed Nabil. All rights reserved.</p>
+  </footer>
+</body>
+</html>
