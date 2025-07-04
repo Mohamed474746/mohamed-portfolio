@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Nabil | Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+    }
+    .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 150px;
+    }
+    h1 {
+      color: #3399ff;
+      text-align: center;
+    }
+    h2 {
+      color: #3399ff;
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;      /* مسافة بين العناصر */
+    font-size: 20px;        /* تكبير الخط */
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+    .project {
+      margin-bottom: 60px;
+    }
+    .summary {
+      background-color: #f0f8ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    .divider {
+      margin: 60px 0;
+      border: 1px dashed #3399ff;
+    }
+    .link {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Mohamed Nabil</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Project Page</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+  <div class="container">
+    <h1>Projects</h1>
+
+    <div class="project">
+      <h2>Diabetes Prediction and EDA</h2>
+       <img src="images/diabetes-cover.jpg" alt="Diabetes Project Cover" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <p>- Conducted EDA on a medical dataset to uncover diabetes-related patterns.</p>
+      <p>- Built ML models using Random Forest, KNN, XGBoost with accuracy up to 83.5%.</p>
+      <p>- Compared model performance with confusion matrices and classification reports.</p>
+      <p>- Created 7 visualizations to understand data distribution and feature relationships.</p>
+
+      <div class="summary">
+        <strong>📌 Results Summary:</strong>
+        <ul>
+          <li>Best Accuracy Achieved: <strong>83.5%</strong></li>
+          <li>Models: Random Forest, XGBoost, KNN</li>
+          <li>Key Features: Glucose, BMI, Age</li>
+          <li>No missing values; all features numeric</li>
+        </ul>
+      </div>
+    <!-- <img src="images/diabetes-extra.jpg" alt="Diabetes Extra Chart" /> -->
+
+
+      <img src="images/diabetes-1.png" alt="Diabetes Project Screenshot 1"/>
+      <img src="images/diabetes-2.png" alt="Diabetes Project Screenshot 2"/>
+      <img src="images/diabetes-3.png" alt="Diabetes Project Screenshot 3"/>
+      <img src="images/diabetes-4.png" alt="Diabetes Project Screenshot 4"/>
+      <img src="images/diabetes-5.png" alt="Diabetes Project Screenshot 5"/>
+      <img src="images/diabetes-6.png" alt="Diabetes Project Screenshot 6"/>
+      <img src="images/diabetes-7.png" alt="Diabetes Project Screenshot 7"/>
+
+      <p class="link">
+        🔗 <a href="https://github.com/Mohamed474746/diabetes-prediction" target="_blank">View Project on GitHub</a>
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="project">
+    <h2>AI Medical Diagnosis Assistant</h2>
+    <img src="images/medical-cover.jpg" alt="Medical Diagnosis Cover" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+
+    <p>- Built a machine learning system to diagnose over 40 diseases based on patient symptoms.</p>
+    <p>- Cleaned and encoded 4920 rows of medical symptom data, handling missing and duplicate entries.</p>
+    <p>- Compared three ML models: Decision Tree, KNN, and Random Forest using GridSearchCV.</p>
+    <p>- Achieved outstanding accuracy, with Random Forest scoring 100% on test data.</p>
+    <p>- Visualized symptom distribution and model performance with Matplotlib and Seaborn.</p>
+
+    <div class="summary">
+        <strong>📌 Results Summary:</strong>
+        <ul>
+        <li>Dataset: 4920 patients – 41 disease classes – 17 symptom fields</li>
+        <li>Accuracy: Random Forest – <strong>100%</strong> | KNN – 98%</li>
+        <li>Best Model: Random Forest (with GridSearchCV tuning)</li>
+        <li>Classification Report: Perfect precision, recall, and F1-scores</li>
+        </ul>
+    </div>
+
+    <img src="images/disease_distribution_pie.png" alt="Symptom Distribution Pie Chart" />
+    <img src="images/missing_symptoms_distribution.png" alt="Missing Symptoms Histogram" />
+    <img src="images/model_accuracy_comparison.png" alt="Correlation Heatmap" />
+
+    <p class="link">
+        🔗 <a href="https://github.com/your-username/ai-medical-diagnosis" target="_blank">View Project on GitHub</a>
+    </p>
+    </div>
+
+
+    <hr class="divider" />
+
+
+    <div class="project">
+  <h2>Customer Churn Prediction and Analysis</h2>
+  <img src="images/churn-cover.jpg" alt="Customer Churn Cover" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+
+  <p>- Predicting customer churn is crucial for telecom companies to retain customers and improve strategy.</p>
+  <p>- This project analyzes customer behavior and builds a machine learning model to predict churn likelihood.</p>
+
+  <div class="summary">
+    <strong>📁 Dataset:</strong>
+    <ul>
+      <li>Source: Telco Customer Churn Dataset (Kaggle)</li>
+      <li>Records: 7,043 customers</li>
+      <li>Features: 21 columns – demographics, billing, services</li>
+      <li>Target: Churn (Yes/No)</li>
+    </ul>
+
+    <strong>🔍 EDA Insights:</strong>
+    <ul>
+      <li>Month-to-month contracts have higher churn</li>
+      <li>Low tenure & high monthly charges = higher churn risk</li>
+      <li>No tech support or online security increases churn</li>
+    </ul>
+
+    <strong>🧼 Data Preprocessing:</strong>
+    <ul>
+      <li>Handled missing values in <code>TotalCharges</code></li>
+      <li>Encoded categorical data using <code>pd.get_dummies()</code></li>
+      <li>Scaled numeric features with <code>StandardScaler</code></li>
+      <li>Split data: 80% train / 20% test</li>
+    </ul>
+
+    <strong>🤖 Model Performance:</strong>
+    <table style="width:100%; margin-top: 10px; border-collapse: collapse;">
+      <tr style="background-color: #f0f8ff;">
+        <th style="padding: 8px; border: 1px solid #ccc;">Model</th>
+        <th style="padding: 8px; border: 1px solid #ccc;">Accuracy</th>
+        <th style="padding: 8px; border: 1px solid #ccc;">Recall (Churn)</th>
+        <th style="padding: 8px; border: 1px solid #ccc;">F1 Score</th>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;">Random Forest</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">79.5%</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">46.3%</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">54.5%</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #ccc;">XGBoost</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">77.8%</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">54.8%</td>
+        <td style="padding: 8px; border: 1px solid #ccc;">56.8%</td>
+      </tr>
+    </table>
+
+    <!-- 🔽 صور للمشروع -->
+     
+    <div style="margin-top: 20px;">
+      <img src="images/charn.png" alt="Churn Distribution" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <img src="images/churn.png" alt="Contract Type vs Churn" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <img src="images/Correlation between numerical features.png" alt="Tech Support vs Churn" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <img src="images/Top 10 Important Features.png" alt="Feature Importance from XGBoost" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <img src="images/Top 10 Features.png" alt="Feature Importance from XGBoost" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <img src="images/model_performance_comparison.png" alt="Feature Importance from XGBoost" style="width:100%; border-radius: 10px; margin: 10px 0;" />
+      <p class="link">
+        🔗 <a href="https://github.com/Mohamed474746/Customer-Churn" target="_blank">View Project on GitHub</a>
+      </p>
+    </div>
+    <p style="margin-top: 10
+
+    <hr class="divider" />
+
